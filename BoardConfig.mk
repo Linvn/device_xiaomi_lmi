@@ -10,6 +10,7 @@ include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/lmi
 
 BUILD_BROKEN_DUP_RULES := true
+include vendor/xiaomi/miuicamera/BoardConfigVendor.mk #MIUICamera with enforced selinux
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
