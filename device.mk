@@ -115,9 +115,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.audio@6.0-impl \
+    android.hardware.audio@7.1-impl \
     audio.bluetooth.default \
     audio.primary.kona \
     audio.r_submix.default \
