@@ -17,8 +17,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO F2 Pro
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi K30 Pro
 
 # Rom Flags
 RISING_MAINTAINER := macka
