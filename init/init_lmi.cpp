@@ -61,11 +61,7 @@ void load_redmi_k30_pro() {
 
 void vendor_load_properties() {
     std::string variant = GetProperty("ro.boot.product.hardware.sku", "");
-    if (variant.find("pro") != std::string::npos) {
-        load_redmi_k30_pro_zoom_edition();
-    } else {
-        load_redmi_k30_pro();
-    }
+    load_redmi_k30_pro();
 
     load_dalvikvm_properties();
 }
