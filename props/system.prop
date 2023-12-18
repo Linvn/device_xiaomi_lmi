@@ -56,3 +56,6 @@ persist.log.tag.TrafficStats=S
 persist.log.tag.ContrastColorUtil=S
 persist.log.tag.OpenGLRenderer=S
 persist.log.tag.ultrasound_extn=S
+
+# MultiGen LRU
+persist.device_config.mglru_native.lru_gen_config=all
