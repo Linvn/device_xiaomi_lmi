@@ -12,19 +12,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
 # Inherit some common Ricedroid stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/rising/config/rising.mk)
 
+RISING_CHIPSET := SDM865
+RISING_MAINTAINER := Lin
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_HAS_UDFPS := true
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
+# Extra Flags.
+RISING_BATTERY := 4400mah
+RISING_STORAGE := 256gb
+RISING_RAM := 6/8gb
 
-PRODUCT_NAME := evolution_lmi
+PRODUCT_NAME := rising_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 Pro
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_USES_MINI_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
