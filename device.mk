@@ -201,15 +201,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
+    vendor.qti.hardware.memtrack-service \
     gralloc.kona \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
-    memtrack.kona \
     vendor.display.config@1.0 \
     vendor.display.config@1.9 \
     vendor.display.config@1.9.vendor \
