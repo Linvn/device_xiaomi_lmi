@@ -5,7 +5,6 @@
 /vendor/bin/init\.mi\.btmac\.sh                             u:object_r:vendor_qti_init_shell_exec:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?                            u:object_r:vendor_persist_camera_file:s0
 /vendor/(lib64)?/libipebpsstriping\.so                      u:object_r:same_process_hal_file:s0
 
 # Camera motor
@@ -103,3 +102,5 @@
 # Xiaomi thermal daemon
 /vendor/bin/mi_thermald                                     u:object_r:mi_thermald_exec:s0
 /data/vendor/thermal(/.*)?                                  u:object_r:vendor_thermal_data_file:s0
+
+/mnt/vendor/persist/camera(/.*)?                            u:object_r:persist_camera_file:s0
