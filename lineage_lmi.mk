@@ -16,12 +16,25 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="SDM865" \
+    RisingMaintainer="Lin"
+RISING_CHIPSET := SDM865
+RISING_MAINTAINER := Lin
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_HAS_UDFPS := true
+# Extra Flags.
+RISING_BATTERY := 4400mah
+RISING_STORAGE := 256gb
+RISING_RAM := 6/8gb
 
 PRODUCT_NAME := lineage_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO F2 Pro
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi K30 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
